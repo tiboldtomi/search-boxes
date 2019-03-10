@@ -1,0 +1,56 @@
+.hidden-search-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+
+    &__icon {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        border: 0px solid transparent;
+        background: #fff;  // TODO: theme: neutralLighter
+        margin-left: 5px;
+        transition: width .4s ease, border-color .4s linear, border-width .0s linear .4s;
+
+        input[type=text] {
+            visibility: visible;
+            opacity: 1;
+            border: unset;
+            outline: unset;
+            color: #333333;
+            height: 80%;
+            width: 80%;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-size: 18px;
+        }
+
+        &__cancel-icon {
+            position: absolute;
+            top: 0;
+            left: 85%;
+            font-size: 18px;
+            visibility: visible;
+            cursor: pointer;
+        }
+    }
+
+    .open-hidden-field {
+        width: 200px;
+        border: 1px solid #a6a6a6;
+        transition: width .4s ease, border-color .4s linear;
+    }
+}

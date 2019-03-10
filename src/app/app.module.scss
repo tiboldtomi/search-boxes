@@ -1,0 +1,19 @@
+.app-container {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+
+    &__content {
+        width: 100%;
+    }
+
+    [class^="ms-CommandBar-primaryCommands"] {
+        overflow: visible !important;
+    }
+}

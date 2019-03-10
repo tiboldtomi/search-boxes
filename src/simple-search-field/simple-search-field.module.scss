@@ -1,0 +1,39 @@
+.simple-search-field {
+    width: 180px;
+    height: 100%;
+
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        border: 1px solid #a6a6a6; // TODO: theme: neutralTertiary
+        background: #fff;
+    }
+
+    input[type=text] {
+        width: 80%;
+        height: 80%;
+        color: #333333; //TODO: theme: neutralPrimary
+        border: none;
+        outline: none;
+    }
+
+    &__search-icon {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 18px;
+        visibility: visible;
+    }
+
+    &__cancel-icon {
+        position: absolute;
+        top: 0;
+        left: 85%;
+        font-size: 18px;
+        visibility: visible;
+        cursor: pointer;
+    }
+}
