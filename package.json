@@ -5,10 +5,12 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel index.html -p 4000",
-        "build": "parcel build index.html --no-cache"
+        "build": "parcel build index.html --no-cache",
+        "deploy": "gh-pages -d dist"
     },
     "keywords": [],
-    "author": "",
+    "author": "Tamás Tibold",
+    "homepage": "https://tiboldtomi.github.io/search-boxes",
     "license": "ISC",
     "dependencies": {
         "classnames": "^2.2.6",
@@ -21,6 +23,7 @@
         "@types/classnames": "^2.2.7",
         "@types/react": "^16.8.7",
         "@types/react-dom": "^16.8.2",
+        "gh-pages": "^2.0.1",
         "node-sass": "^4.11.0",
         "parcel-bundler": "^1.12.0"
     }
